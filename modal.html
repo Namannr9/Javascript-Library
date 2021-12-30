@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang='en'>
+<head>
+<meta charset='utf-8'>
+<title>JavaScript library</title>
+<script src='js/JSLibrary.js'></script>
+<link rel="stylesheet" href="css/JSLibraryStyle.css">
+<script>
+// user written functions
+function abBeforeOpening()
+{
+return true;
+}
+function abOpened()
+{
+}
+function abBeforeClosing()
+{
+return true;
+}
+function abClosed()
+{
+}
+
+function createModal1()
+{
+$$$.modals.show("ab");
+}
+</script>
+</head>
+<body>
+<h1>Basic Modal Example</h1>
+<button style='background:#1d60c4dc;border:none;border-radius:2px;padding:10px;font-size:18px;color:#FFF' onclick='createModal1()'>Open Modal</button>
+<div id='ab' style='display:none' forModal='TRUE' size="600x300" header="Modal Heading" footer="Modal footer" maskColor="#E9E5D5" modalBackgroundColor="#EEF1EF	" closeButton="true" beforeOpening="abBeforeOpening()" afterOpening="abOpened()" beforeClosing="abBeforeClosing()" afterClosing="abClosed()">
+
+some text in model some text in model
+some text in model some text in model
+some text in model some text in model
+
+<br>
+<hr>
+<h4>You can write here something...</h4><input type='text' id='myTextBox' value='you can write here...'>
+<hr>
+some text in model some text in model<br>
+some text in model some text in model<br>
+some text in model some text in model<br>
+some text in model some text in model<br>
+some text in model some text in model<br>
+some text in model some text in model<br>
+some text in model some text in model<br>
+some text in model some text in model<br>
+This is last line.
+</div>
+</body>
+</html>
